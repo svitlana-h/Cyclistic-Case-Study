@@ -1,0 +1,154 @@
+-- 1. Number of trips by user type
+SELECT
+ COUNT (*) as number_of_trips,
+ member_casual
+FROM `cyclistic_dataset.tripdata_combined_cleaned`
+GROUP BY member_casual;
+
+-- 2. AVG trip length by user type
+-- all user types
+SELECT AVG(trip_length_minutes) AS avg_trip_length, 
+FROM `cyclistic_dataset.tripdata_combined_cleaned`;
+
+-- members
+SELECT AVG(trip_length_minutes) AS avg_trip_length_member, 
+FROM `cyclistic_dataset.tripdata_combined_cleaned`
+WHERE member_casual = 'member';
+
+-- casual riders
+SELECT AVG(trip_length_minutes) AS avg_trip_length_casual, 
+FROM `cyclistic_dataset.tripdata_combined_cleaned`
+WHERE member_casual = 'casual';
+
+-- 3. Preferred bike type
+SELECT rideable_type, member_casual, count(*) AS number_of_trips
+FROM `cyclistic_dataset.tripdata_combined_cleaned`
+GROUP BY rideable_type, member_casual
+ORDER BY member_casual, number_of_trips DESC;
+
+-- 4. Number of trips by month, weekday and hour
+-- by month
+SELECT month, member_casual, count(*) as number_of_trips
+FROM `cyclistic_dataset.tripdata_combined_cleaned`
+GROUP BY member_casual, month;
+-- by weekday
+SELECT day_of_week, member_casual, count(*) as number_of_trips
+FROM `cyclistic_dataset.tripdata_combined_cleaned`
+GROUP BY member_casual, day_of_week;
+-- by hour
+SELECT time_of_day, member_casual, count(*) as number_of_trips
+FROM `cyclistic_dataset.tripdata_combined_cleaned`
+GROUP BY member_casual, time_of_day;
+
+-- 5. AVG trip length by month and weekday
+-- AVG trip length for members by month
+SELECT month, AVG(trip_length_minutes) AS avg_trip_length_member
+FROM `cyclistic_dataset.tripdata_combined_cleaned`
+WHERE member_casual = 'member'
+GROUP BY month
+ORDER BY month;
+
+-- AVG trip length for casual riders by month
+SELECT month, AVG(trip_length_minutes) AS avg_trip_length_casual
+FROM `cyclistic_dataset.tripdata_combined_cleaned`
+WHERE member_casual = 'casual'
+GROUP BY month
+ORDER BY month;
+
+-- AVG trip length for members by day of the week
+SELECT day_of_week, AVG(trip_length_minutes) AS avg_trip_length_member
+FROM `cyclistic_dataset.tripdata_combined_cleaned`
+WHERE member_casual = 'member'
+GROUP BY day_of_week
+ORDER BY day_of_week;
+
+-- AVG trip length for casual riders by day of the week
+SELECT day_of_week, AVG(trip_length_minutes) AS avg_trip_length_casual
+FROM `cyclistic_dataset.tripdata_combined_cleaned`
+WHERE member_casual = 'casual'
+GROUP BY day_of_week
+ORDER BY day_of_week;
+
+-- 6. Trip length distribution
+SELECT
+ member_casual,
+ CASE
+   WHEN trip_length_minutes <= 5 THEN '0-5 minutes'
+   WHEN trip_length_minutes <= 15 THEN '6-15 minutes'
+   WHEN trip_length_minutes <= 30 THEN '16-30 minutes'
+   WHEN trip_length_minutes <= 60 THEN '31-60 minutes'
+   WHEN trip_length_minutes <= 120 THEN '1-2 hours'
+   WHEN trip_length_minutes <= 240 THEN '2-4 hours'
+   WHEN trip_length_minutes <= 480 THEN '4-8 hours'
+   WHEN trip_length_minutes <= 720 THEN '8-12 hours'
+   WHEN trip_length_minutes <= 1440 THEN '12-24 hours'
+   ELSE 'Invalid trip length'
+ END AS trip_length_category,
+ COUNT(*) AS number_of_trips
+FROM
+ `cyclistic_dataset.tripdata_combined_cleaned`
+GROUP BY
+ member_casual, trip_length_category
+ORDER BY
+ member_casual, trip_length_category;
+
+-- 7. Popular start and end stations by user type
+-- Start stations for members
+SELECT
+ start_station_name,
+ COUNT(*) as number_of_trips,
+ start_lng,
+ start_lat
+FROM
+ `cyclistic_dataset.tripdata_combined_cleaned`
+WHERE member_casual = 'member'
+ AND start_station_name != 'null'
+GROUP BY start_station_name, start_lng, start_lat
+ORDER BY
+ COUNT(*) DESC
+LIMIT 10;
+
+-- Start stations for casual riders
+SELECT
+ start_station_name,
+ COUNT(*) as number_of_trips,
+ start_lng,
+ start_lat
+FROM
+ `cyclistic_dataset.tripdata_combined_cleaned`
+WHERE member_casual = 'casual'
+ AND start_station_name != 'null'
+GROUP BY start_station_name, start_lng, start_lat
+ORDER BY
+ COUNT(*) DESC
+LIMIT 10;
+
+-- End stations for members
+SELECT
+ end_station_name,
+ COUNT(*) as number_of_trips,
+ end_lng,
+ end_lat
+FROM
+ `cyclistic_dataset.tripdata_combined_cleaned`
+WHERE member_casual = 'member'
+ AND end_station_name != 'null'
+GROUP BY end_station_name, end_lng, end_lat
+ORDER BY
+ COUNT(*) DESC
+LIMIT 10;
+
+-- End stations for casual riders
+SELECT
+ end_station_name,
+ COUNT(*) as number_of_trips,
+ end_lng,
+ end_lat
+FROM
+ `cyclistic_dataset.tripdata_combined_cleaned`
+WHERE member_casual = 'casual'
+ AND end_station_name != 'null'
+GROUP BY end_station_name, end_lng, end_lat
+ORDER BY
+ COUNT(*) DESC
+LIMIT 10;
