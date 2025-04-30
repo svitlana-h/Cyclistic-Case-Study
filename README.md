@@ -35,6 +35,8 @@ SQL query: [Data Combining](https://github.com/svitlana-h/Cyclistic-Case-Study/b
 * Imported all monthly files into BiqQuery (some of the monthly datasets were broken down into smaller ones due to BigQuery's 100MB table upload limit).
 * Used the UNION ALL function to combine the monthly tables into a single dataset.
 
+Note: the new table contains 5,783,100 records.
+
 **3.2. Data Exploration**  
 SQL query: [Data Exploration](https://github.com/svitlana-h/Cyclistic-Case-Study/blob/062ba742fbee0d337ddb8abeeb5634bfc065082f/02.%20Data%20Exploration.sql)  
 
@@ -44,6 +46,18 @@ SQL query: [Data Exploration](https://github.com/svitlana-h/Cyclistic-Case-Study
 * Checked the **ride_id** length consistency to avoid any ID mismatches or formatting errors. Note: all IDs are 16 characters long.
 * Checked the distinct values in the **rideable_type** column. Note: it contains three unique values: classic_bike, electric_bike and electric_scooter. The latter falls outside the scope of the case study.
 * Checked for duplicate records. Note: none found.
-* Cheked for missing values. Note: 1080148 null values found in **start_station_name**; 1110075 null values found in **end_station_name**; 6744 null values found in **end_lat** and **end_lng**.
+* Cheked for missing values. Note: 1,080,148 null values found in **start_station_name**; 1,110,075 null values found in **end_station_name**; 6,744 null values found in **end_lat** and **end_lng**.
 * Checked the distinct values in the **member_casual** column. Note: it contains only two user types (member and casual) with no misspellings or inconsistencies.
-* Checked the trip length to identify outliers (shorter than 1 minute or loger than 24 hours as these might be false starts or system errors). Note: 246627 values found.
+* Checked the trip length to identify outliers (shorter than 1 minute or loger than 24 hours as these might be false starts or system errors). Note: 246,627 values found.
+
+**3.3. Data Cleaning**  
+SQL query: [Data Cleaning](https://github.com/svitlana-h/Cyclistic-Case-Study/blob/786f7ebe075305e7bf2a399bce25156bbc426352/03.%20Data%20Cleaning.sql)  
+
+* Filtered out all electric scooter trips.
+* Removed records with missing values. Note: missing values in the **start_station_name** and **end_station_name** columns were primarily associated with electric bikes, which is expected since electric bikes can be parked outside designated docking stations. Therefore, I have removed the rows with missing station information only for classic bikes. Additionally, I have removed all rows with missing values in the end_lat and end_lng columns.
+* Filtered out the records with trip length shorter than 1 minute or longer than 24 hours.
+* Created new columns: trip_length_minutes, month, day_of_week, time_of_day.
+
+Note: the cleaned table contains 5,403,127 records. 379,973 records were removed.
+
+### 3. Data Analysis
