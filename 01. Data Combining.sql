@@ -1,4 +1,4 @@
--- To combine all monthly datasets into a single table
+-- Combine all monthly datasets into a single table
 
 CREATE TABLE `cyclistic_dataset.tripdata_combined` AS (
   SELECT * FROM `cyclistic_dataset.tripdata_202403`
