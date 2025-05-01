@@ -8,7 +8,7 @@ Cyclistic is a Chicago-based bike-share company that offers flexible access to i
 Recently, the finance analysts have concluded that annual members are much more profitable than casual riders (customers who purchase single-ride or full-day passes). The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, the marketing team would like to design a new marketing strategy aimed at converting casual riders into annual members. To do this, they must understand how casual riders and annual members use Cyclistic bikes differently.
 
 ## REPORT
-### 1. Business task statement  
+### 1. Business Task Statement  
 To identify key differences in behaviour of annual members and casual riders, and provide recommendations for a new marketing strategy to help convert casual riders into members.
 
 ### 2. Preparation
@@ -27,13 +27,14 @@ For the purposes of this case study, I will be using the public historical data 
 * SQL: data processing and analysis
 * Tableau: visualizations
 
-### 3. Data processing
+### 3. Data Processing
+In this phase, I combined the monthly datasets into one table, performed an initial exploration of data to understand how to prepare it for analysis, and cleaned the data. 
 
 **3.1. Data Combining**  
 SQL query: [Data Combining](https://github.com/svitlana-h/Cyclistic-Case-Study/blob/69e09d99da31622e97eb4824771bc3d957f9e68a/01.%20Data%20Combining.sql)  
 
 * Imported all monthly files into BiqQuery (some of the monthly datasets were broken down into smaller ones due to BigQuery's 100MB table upload limit).
-* Used the UNION ALL function to combine the monthly tables into a single dataset.
+* Used the UNION ALL function to combine the monthly datasets into a single table.
 
 Note: the new table contains 5,783,100 records.
 
@@ -60,4 +61,15 @@ SQL query: [Data Cleaning](https://github.com/svitlana-h/Cyclistic-Case-Study/bl
 
 Note: the cleaned table contains 5,403,127 records. 379,973 records were removed.
 
-### 3. Data Analysis
+### 4. Data Analysis
+SQL query: [Data Analysis](https://github.com/svitlana-h/Cyclistic-Case-Study/blob/ea066402ca3f7a5a8aacd27ad579824b9d180236/04.%20Data%20Analysis.sql)  
+
+In this phase, I explored the cleaned dataset to identify patterns and differences in usage behavior between casual riders and members. The queries were created to analyze the following:
+* Number of trips by user type 
+* Average trip length by user type
+* Bike type preference by user type   
+* Number of trips by month, weekday and hour
+* Average trip length by month and weekday
+* Trip length distribution   
+* Popular start and end stations 
+
