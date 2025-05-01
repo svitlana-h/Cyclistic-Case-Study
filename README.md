@@ -73,3 +73,19 @@ In this phase, I explored the cleaned dataset to identify patterns and differenc
 * Trip length distribution   
 * Popular start and end stations 
 
+### 5. Findings
+In this phase, I imported the new tables into Tableau to create visualizations.
+
+#### Figure 1. Total number of trips by user type
+
+<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/51e9e0af1fe2969eb45b160fbcb46e77d50a7a97/Images/Total%20number%20of%20trips.png" alt="Total number of trips" width="80%"/>  
+This chart shows the distribution of the trips by user type. According to results, members accounted for 63,86% of all trips over the analyzed perios. This suggests that members show consistently higher engagement with the bike share service than casual riders.  
+
+#### Figure 2. Average trip length  
+<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/51e9e0af1fe2969eb45b160fbcb46e77d50a7a97/Images/Average%20trip%20length.png" alt="Average trip length" width="80%"/>  
+
+3. Number of trips by bike type
+<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/51e9e0af1fe2969eb45b160fbcb46e77d50a7a97/Images/Number%20of%20trips%20by%20bike%20type.png" alt="Number of trips by bike type" width="80%"/>
+
+
+<img src="" alt="" width="80%"/>
