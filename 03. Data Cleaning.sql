@@ -1,4 +1,5 @@
--- Remove electric scooter trips (creating a new table as I can not use the DELETE function due to BigQuery limitations)
+-- Remove electric scooter trips 
+-- Note: creating a new table as I can not use the DELETE function due to BigQuery limitations
 CREATE TABLE `cyclistic_dataset.tripdata_combined_cleaned` AS
 SELECT *
 FROM `cyclistic_dataset.tripdata_combined`
