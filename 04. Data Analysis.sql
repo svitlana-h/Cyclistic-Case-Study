@@ -22,17 +22,17 @@ GROUP BY rideable_type, member_casual
 ORDER BY member_casual, number_of_trips DESC;
 
 -- Number of trips by month
-SELECT month, member_casual, count(*) as number_of_trips
+SELECT month, member_casual, count(*) AS number_of_trips
 FROM `cyclistic_dataset.tripdata_combined_cleaned`
 GROUP BY member_casual, month;
 
 -- Number of trips by weekday
-SELECT day_of_week, member_casual, count(*) as number_of_trips
+SELECT day_of_week, member_casual, count(*) AS number_of_trips
 FROM `cyclistic_dataset.tripdata_combined_cleaned`
 GROUP BY member_casual, day_of_week;
 
 -- Number of trips by hour
-SELECT time_of_day, member_casual, count(*) as number_of_trips
+SELECT time_of_day, member_casual, count(*) AS number_of_trips
 FROM `cyclistic_dataset.tripdata_combined_cleaned`
 GROUP BY member_casual, time_of_day;
 
