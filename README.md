@@ -76,16 +76,29 @@ In this phase, I explored the cleaned dataset to identify patterns and differenc
 ### 5. Findings
 In this phase, I imported the new tables into Tableau to create visualizations.
 
-#### Figure 1. Total number of trips by user type
+#### Figure 1. Total number of trips (members vs casual riders)
+<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/51e9e0af1fe2969eb45b160fbcb46e77d50a7a97/Images/Total%20number%20of%20trips.png" alt="Total number of trips" width="75%"/>  
+This chart shows the distribution of the trips taken in March 2024 - February 2025 by user type. According to results, members accounted for 63,86% of all trips showing consistently higher engagement with the bike share service than casual riders.  
 
-<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/51e9e0af1fe2969eb45b160fbcb46e77d50a7a97/Images/Total%20number%20of%20trips.png" alt="Total number of trips" width="80%"/>  
-This chart shows the distribution of the trips by user type. According to results, members accounted for 63,86% of all trips over the analyzed perios. This suggests that members show consistently higher engagement with the bike share service than casual riders.  
+#### Figure 2. Average trip length (members vs casual riders) 
+<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/51e9e0af1fe2969eb45b160fbcb46e77d50a7a97/Images/Average%20trip%20length.png" alt="Average trip length" width="75%"/> 
 
-#### Figure 2. Average trip length  
-<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/51e9e0af1fe2969eb45b160fbcb46e77d50a7a97/Images/Average%20trip%20length.png" alt="Average trip length" width="80%"/>  
+The chart above compares the average duration of trips taken by members and casual riders. On average, casual riders took significantly longer trips - 21,64 minutes - while members typically spent 12,11 minutes on the trip. This difference may suggest that casual riders are more likely to take leisurely or recreational rides, while members tend to take shorter trips, possibly for commuting.
 
-3. Number of trips by bike type
-<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/51e9e0af1fe2969eb45b160fbcb46e77d50a7a97/Images/Number%20of%20trips%20by%20bike%20type.png" alt="Number of trips by bike type" width="80%"/>
+#### Figure 3. Number of trips by bike type (members vs casual riders)
+<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/51e9e0af1fe2969eb45b160fbcb46e77d50a7a97/Images/Number%20of%20trips%20by%20bike%20type.png" alt="Number of trips by bike type" width="75%"/>
+
+This graph displays the bike types used by members and casual riders. Both groups showed a slight preference for electric bikes over classic bikes.
+
+#### Figure 4. Number of trips by month
+<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/73563bb6f03506bc6971a8131a242239aa12b41d/Images/Number%20of%20trips%20by%20month.png" alt="Number of trips by month" width="75%"/>
+
+This chart illustrates how bike usage changes over the year. As we can see, the trips increased during the warmer months, especially from May to October. Casual riders showed a sharper rise in usage during summer months, likely due to weather being for suitable for outdoor leisure activities, while members had more consistent activity year-round, though still with a peak in summer months.
+
+#### Figure 5. Number of trips by weekday
+<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/73563bb6f03506bc6971a8131a242239aa12b41d/Images/Number%20of%20trips%20by%20weekday.png" alt="Number of trips by weekday" width="75%"/>
+
+This chart highlights how trip activity varies throughout the week. Members show higher activity during weekdays, suggesting they likely use the bikes for commuting. Casual riders, on the other hand, take more trips on weekends, which may indicate that their usage is more leisure-oriented.
 
 
-<img src="" alt="" width="80%"/>
+<img src="" alt="" width="75%"/>
