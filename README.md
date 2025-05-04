@@ -100,5 +100,8 @@ This chart illustrates how bike usage changes over the year. As we can see, the 
 
 This chart highlights how trip activity varies throughout the week. Members show higher activity during weekdays, suggesting they likely use the bikes for commuting. Casual riders, on the other hand, take more trips on weekends, which may indicate that their usage is more leisure-oriented.
 
+#### Figure 6. Number of trips by hour
+<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/788b4369628c76b54f19fc13c6d40697ff3d87ad/Images/Number%20of%20trips%20by%20hour.png" alt="Number of trips by hour" width="75%"/>
+This chart illustrates how trip activity varies throughout the day. We can observe two clear peaks in members' activity - 8 AM and between 4 PM and 6 PM, likely tied to commuting hours. Casual riders' activity increases gradually from early morning till 5 PM, suggesting more flexible usage of bike services throughout the day. 
 
 <img src="" alt="" width="75%"/>
