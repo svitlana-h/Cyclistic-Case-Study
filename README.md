@@ -69,8 +69,7 @@ In this phase, I explored the cleaned dataset to identify patterns and differenc
 * Average trip length by user type
 * Bike type preference by user type   
 * Number of trips by month, weekday and hour
-* Average trip length by month and weekday
-* Trip length distribution   
+* Average trip length by month and weekday  
 * Popular start and end stations 
 
 ### 5. Findings
@@ -102,6 +101,20 @@ This chart highlights how trip activity varies throughout the week. Members show
 
 #### Figure 6. Number of trips by hour
 <img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/788b4369628c76b54f19fc13c6d40697ff3d87ad/Images/Number%20of%20trips%20by%20hour.png" alt="Number of trips by hour" width="75%"/>
+
 This chart illustrates how trip activity varies throughout the day. We can observe two clear peaks in members' activity - 8 AM and between 4 PM and 6 PM, likely tied to commuting hours. Casual riders' activity increases gradually from early morning till 5 PM, suggesting more flexible usage of bike services throughout the day. 
+
+#### Figure 7. Average trip length by month
+<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/6f0ba1abeb8e5bd2f172f12d43befd1ab47f46cf/Images/Average%20trip%20length%20by%20month.png" alt="Average trip length by month" width="75%"/>
+
+This graph illustrates how the average trip length changes over the year. Members maintained a steady average trip duration, typically between 10 and 13 minutes, with only a slight increase during warmer months. This consistency suggests that members use bike services for routine purposes. In contrast, casual riders showed more seasonal variation - from shorter trips in winter (typically 11-13 minutes) to almost twice longer trips in warmer months (22-24 minutes). This sharp rise suggests that casual riders are likely to use bikes for outdoor leisure activities which are more common in good weather.
+
+#### Figure 8. Average trip length by weekday
+<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/6f0ba1abeb8e5bd2f172f12d43befd1ab47f46cf/Images/Average%20trip%20length%20by%20weekday.png" alt="Average trip length by weekday" width="75%"/>
+
+This chart shows how average trip lengths vary throughout the week. Both user types tend to take longer trips on weekends compared to weekdays. Members' average trip duration stays fairly consistent throughout the week, with only a slight increase on weekend. Casual riders, on the other hand, show more noticeable increase on weekends, suggesting they they ride longer when they have more free time. This aligns well with the emerging trend.
+
+
+
 
 <img src="" alt="" width="75%"/>
