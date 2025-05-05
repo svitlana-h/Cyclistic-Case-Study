@@ -114,7 +114,9 @@ This graph illustrates how the average trip length changes over the year. Member
 
 This chart shows how average trip lengths vary throughout the week. Both user types tend to take longer trips on weekends compared to weekdays. Members' average trip duration stays fairly consistent throughout the week, with only a slight increase on weekend. Casual riders, on the other hand, show more noticeable increase on weekends, suggesting they they ride longer when they have more free time. This aligns well with the emerging trend.
 
+#### Figure 9. Top start and end stations
+<img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/14b1dd124fd3e9a2c153d01c33cbe7c1db8e0c71/Images/Top%20stations.png" alt="Top stations" width="100%"/>
 
+The illustration above displays the top-10 start and end stations for members and casual riders. Casual riders prefer stations near waterfronts, parks and tourist areas, while members frequently use the stations located near business districts, universities and residential ares. This reinforces the pattern tha casual riders use bikes for leisure activities, and members take practical, routine trips.
 
-
-<img src="" alt="" width="75%"/>
+<img src="" alt="" width="150%"/>
