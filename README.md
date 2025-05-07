@@ -118,20 +118,19 @@ This chart shows how average trip length varies throughout the week. Both groups
 
 The illustration above displays the top-10 start and end stations for members and casual riders. As we can see, casual riders prefer stations near waterfronts, parks and tourist areas, while members frequently use the stations located near business districts, universities and residential ares. This reinforces the pattern that casual riders use bikes for leisure activities, and members take practical, routine trips. It also suggests that a significant part of casual riders may be tourists, which limits the possibility to convert them into annual members.
 
-### 6. Findings Summary
+#### Findings Summary:
 * Average trip duration is significantly shorter for members (12.11 minutes) compared to casual riders (21.64 minutes).
 * Casual riders’ trip durations vary more notably with the seasons, peaking during warmer months, while members maintain a relatively steady average throughout the year.
 * Members are more active on weekdays, especially during commuting hours, while casual members are more active on weekends and prefer late afternoon trips.
 * Members prefer stations located near business districts, universities and residential areas, while casual riders often use stations near tourist areas, parks, and waterfronts.
 * Members primarily use bikes for commuting and routine travel, whereas casual riders use them more for leisure and recreation.
 
-### 7. Recommendations
-
-**1. Launch targeted ads in high-interest areas during summer months**  
+### 6. Recommendations
+Based on the analysis and defined differences between members and casual riders, I would like to suggest the following aproach for the marketing strategy development in order to convert casual riders into members:  
+#### 1. Introduce a monthly membership plan 
+To appeal to casual riders who use bikes frequently during warmer months but do not commit year-round, a monthly subscription plan could be offered. This option would allow casual users subscribing for the months when they use the service most actively. The added flexibility (compared to yearly membership) would lower the barrier to entry and make it easier for casual riders to try out the membership.  
+#### 2. Launch targeted ads in high-interest areas during summer months  
 Targeted ad campaigns should be run during summer months when casual riders are most active. Ads can be displayed near parks and waterfornts to capture the most attention of casual riders. The ads can highlight membership benefits relevant to seasonal or recreational riders.  
 
-**2. Introduce a monthly membership plan**  
-To appeal to casual users who ride more frequently in warmer months but do not commit year-round, a monthly subscription plan can be offered. This way casual riders might subscribe for a few months when they are most active. This more flexible option would lower the barrier to entry and encourage seasonal users to become repeat customers.  
-
-**3. Highlight Long-Term Savings for Longer Trips**  
+#### 3. Highlight Long-Term Savings for Longer Trips  
 Create a marketing campaign that illustrates how membership reduces costs for frequent long trips. Visual ads or in-app messages could compare the cost of casual rides vs. member rides over time.  
