@@ -129,8 +129,10 @@ The illustration above displays the top-10 start and end stations for members an
 Based on the analysis and defined differences between members and casual riders, I would like to suggest the following aproach for the marketing strategy development in order to convert casual riders into members:  
 #### 1. Introduce a monthly membership plan 
 To appeal to casual riders who use bikes frequently during warmer months but do not commit year-round, a monthly subscription plan could be offered. This option would allow casual users subscribing for the months when they use the service most actively. The added flexibility (compared to yearly membership) would lower the barrier to entry and make it easier for casual riders to try out the membership.  
-#### 2. Launch targeted ads in high-interest areas during summer months  
-Targeted ad campaigns should be run during summer months when casual riders are most active. Ads can be displayed near parks and waterfornts to capture the most attention of casual riders. The ads can highlight membership benefits relevant to seasonal or recreational riders.  
+#### 2. Run seasonal ad campaign in high-interest areas
+To ensure the best reach and engagement with casual riders, ad campaigns could be launched during summer and placed in popular recreational spots (parks, waterfronts), where casual riders are most likely to see them. These ads should highlight membership benefits, such as unlimited rides, cost savings on frequent trips, and convenience during busy weekends.
+#### 3. Target high-potential casual riders with personalized messages
+By analyzing the ride data and identifying casual users who ride frequently or show consistent activity, Cyclistic could target them with personalized messages through email or app notifications. These messages could highlight the potential cost savings and added benefits of switching to a membership.
 
-#### 3. Highlight Long-Term Savings for Longer Trips  
-Create a marketing campaign that illustrates how membership reduces costs for frequent long trips. Visual ads or in-app messages could compare the cost of casual rides vs. member rides over time.  
+## CONCLUSION
+In this case study, I used SQL and Tableau to explore key differences between members and casual riders, and provided targeted recommendations to support converting casual riders into members. Thank you for reading!
