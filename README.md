@@ -137,4 +137,6 @@ To ensure the best reach and engagement with casual riders, ad campaigns could b
 By analyzing the ride data and identifying casual users who ride frequently or show consistent activity, Cyclistic could target them with personalized messages through email or app notifications. These messages could highlight the potential cost savings and added benefits of switching to a membership.
 
 ## CONCLUSION
-In this case study, I used SQL and Tableau to explore key differences between members and casual riders, and provided targeted recommendations to support converting casual riders into members. Thank you for reading!
+In this case study, I used SQL and Tableau to explore key differences between members and casual riders, and provided targeted recommendations to support converting casual riders into members.  
+
+Thank you for reading!
