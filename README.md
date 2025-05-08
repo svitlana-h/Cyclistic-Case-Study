@@ -113,7 +113,7 @@ This chart illustrates how the average trip duration changes over the year. Memb
 #### Figure 8. Average trip length by weekday
 <img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/6f0ba1abeb8e5bd2f172f12d43befd1ab47f46cf/Images/Average%20trip%20length%20by%20weekday.png" alt="Average trip length by weekday" width="75%"/>
 
-This chart shows how average trip length varies throughout the week. Both groups tend to take longer trips on weekends compared to weekdays. Members' average trip duration stays fairly consistent throughout the week, with only a slight increase on weekends. Casual riders, on the other hand, show more noticeable increase on weekends, suggesting they they ride longer when they have more free time. This aligns well with the stated hyphotesis.
+This chart shows how average trip length varies throughout the week. Both groups tend to take longer trips on weekends compared to weekdays. Members' average trip duration stays fairly consistent throughout the week, with only a slight increase on weekends. Casual riders, on the other hand, show more noticeable increase on weekends, suggesting that they ride longer when they have more free time. This aligns well with the stated hyphotesis.
 
 #### Figure 9. Top start and end stations
 <img src="https://github.com/svitlana-h/Cyclistic-Case-Study/blob/14b1dd124fd3e9a2c153d01c33cbe7c1db8e0c71/Images/Top%20stations.png" alt="Top stations" width="100%"/>
