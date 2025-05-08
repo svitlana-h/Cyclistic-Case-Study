@@ -70,6 +70,8 @@ In this phase, I explored the cleaned dataset to identify patterns and differenc
 * Popular start and end stations 
 
 ### 5. Data Visualization
+Tableau: [Cyclistic Case Study Dashboards](https://public.tableau.com/app/profile/svitlana.halahuz/viz/CyclisticCaseStudy_Dashboards/MembersvsCasualRiders)  
+
 In this phase, I imported the new tables into Tableau to create visualizations and higlight the patterns and key differences.
 
 #### Figure 1. Total number of trips (members vs casual riders) 
